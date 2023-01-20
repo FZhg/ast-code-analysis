@@ -1,7 +1,6 @@
 package ast_code_analysis
 
 import (
-	"fmt"
 	"go/ast"
 	"go/parser"
 	"go/token"
@@ -30,7 +29,6 @@ func NoIdentifierLenEqual13(node ast.Node) bool {
 		return true
 	})
 
-	fmt.Printf("Result Length: %d\n", len(result))
 	if len(result) == 0 {
 		return true // this method have looped over entire tree
 		// and found no such cases

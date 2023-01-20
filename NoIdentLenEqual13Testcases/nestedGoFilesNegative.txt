@@ -10,7 +10,7 @@ import (
 func main() {
 	// src is the input for which we want to inspect the AST.
 	src := `
-package p
+package p111111111111
 const c = 1.0
 var X = f(3.14)*2 + c
 `
@@ -24,14 +24,14 @@ var X = f(3.14)*2 + c
 
 	// Inspect the AST and print all identifiers and literals.
 	ast.Inspect(f, func(n ast.Node) bool {
-		var s1111111111 string
+		var s string
 		switch x := n.(type) {
 		case *ast.BasicLit:
-			s111111111111 = x.Value
+			s = x.Value
 		case *ast.Ident:
-			s111111111111 = x.Name
+			s = x.Name
 		}
-		if s111111111111 != "" {
+		if s != "" {
 			fmt.Printf("%s:\t%s\n", fset.Position(n.Pos()), s)
 		}
 		return true

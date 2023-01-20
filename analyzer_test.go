@@ -17,35 +17,91 @@ func TestNoIdentifierLenEqual13(t *testing.T) {
 		{
 			name: "singleVariableLen13",
 			args: args{
-				node: getRootNode("testcases/singleVariableLen13.txt"),
+				node: getRootNode("NoIdentLenEqual13Testcases/singleVariableLen13.txt"),
 			},
 			want: false,
 		},
 		{
 			name: "noVariableLen13",
 			args: args{
-				node: getRootNode("testcases/noVariableLen13.txt"),
+				node: getRootNode("NoIdentLenEqual13Testcases/noVariableLen13.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "threeVariablesLen13",
 			args: args{
-				node: getRootNode("testcases/threeVariablesLen13.txt"),
+				node: getRootNode("NoIdentLenEqual13Testcases/threeVariablesLen13.txt"),
+			},
+			want: false,
+		},
+		{
+			name: "singleFuncLen13",
+			args: args{
+				node: getRootNode("NoIdentLenEqual13Testcases/singleFuncLen13.txt"),
+			},
+			want: false,
+		},
+		{
+			name: "twoMethodsLen13",
+			args: args{
+				node: getRootNode("NoIdentLenEqual13Testcases/twoFuncLen13.txt"),
+			},
+			want: false,
+		},
+		{
+			name: "noFuncLen13",
+			args: args{
+				node: getRootNode("NoIdentLenEqual13Testcases/noFuncLen13.txt"),
+			},
+			want: true,
+		},
+		{
+			name: "singleStrLen13",
+			args: args{
+				node: getRootNode("NoIdentLenEqual13Testcases/singleStrLen13.txt"),
+			},
+			want: true,
+		},
+		{
+			name: "noStrLen13",
+			args: args{
+				node: getRootNode("NoIdentLenEqual13Testcases/noStrLen13.txt"),
+			},
+			want: true,
+		},
+		{
+			name: "noCommentsLen13",
+			args: args{
+				node: getRootNode("NoIdentLenEqual13Testcases/noFuncLen13.txt"),
+			},
+			want: true,
+		},
+		{
+			name: "singleCommentLen13",
+			args: args{
+				node: getRootNode("NoIdentLenEqual13Testcases/singleCommentLen13.txt"),
+			},
+			want: true,
+		},
+		{
+			name: "typeDefLen13",
+			args: args{
+				node: getRootNode("NoIdentLenEqual13Testcases/typeDefLen13.txt"),
 			},
 			want: false,
 		},
 		{
 			name: "nestedGoFilesNegative",
 			args: args{
-				node: getRootNode("testcases/nestedGoFilesNegative.txt"),
+				node: getRootNode("NoIdentLenEqual13Testcases/nestedGoFilesNegative.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "nestedGoFilesPositive",
 			args: args{
-				node: getRootNode("testcases/nestedGoFilesPositive.txt"),
+				node: getRootNode("NoIdentLenEqual13Testcases/nestedGoFilesPositive.txt"),
 			},
 			want: false,
 		},

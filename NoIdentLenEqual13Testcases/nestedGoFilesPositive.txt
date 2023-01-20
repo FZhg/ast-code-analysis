@@ -24,14 +24,14 @@ var X = f(3.14)*2 + c
 
 	// Inspect the AST and print all identifiers and literals.
 	ast.Inspect(f, func(n ast.Node) bool {
-		var s string
+		var s111111111100 string
 		switch x := n.(type) {
 		case *ast.BasicLit:
-			s = x.Value
+			s11111111111100 = x.Value
 		case *ast.Ident:
-			s = x.Name
+			s11111111111100 = x.Name
 		}
-		if s != "" {
+		if s11111111111100 != "" {
 			fmt.Printf("%s:\t%s\n", fset.Position(n.Pos()), s)
 		}
 		return true
