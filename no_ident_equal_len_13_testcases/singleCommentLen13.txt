@@ -1,3 +1,0 @@
-// This is a comment with words 13-chars-long
-// This123456789
-package p
