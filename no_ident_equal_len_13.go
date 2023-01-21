@@ -10,6 +10,7 @@ import (
 // length equals 13. returns false otherwise.
 // ast.Node is an interface. ast.File are legitimate input
 // since it implements the interface.
+// An identifier is anything other than a keyword or a literal (strings, int ....).
 func NoIdentifierLenEqual13(node ast.Node) bool {
 	// the ast.inspect function will keep invoke function argument recursive on the children
 	// nodes if function argument returns true
@@ -19,16 +20,13 @@ func NoIdentifierLenEqual13(node ast.Node) bool {
 			return false // stop traversal because
 			// this function already found an positive case
 		}
-
 		iden, ok := node.(*ast.Ident) // use reflection to cast node to specific identifier node
-		// what is an identifier? a name for method, struct or any other user defined stuff
 		if ok && (len(iden.Name) == 13) {
 			result <- false
 			return false
 		}
 		return true
 	})
-
 	if len(result) == 0 {
 		return true // this method have looped over entire tree
 		// and found no such cases
