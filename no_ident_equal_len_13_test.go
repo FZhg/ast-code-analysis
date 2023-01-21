@@ -17,91 +17,91 @@ func TestNoIdentifierLenEqual13(t *testing.T) {
 		{
 			name: "singleVariableLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/singleVariableLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/singleVariableLen13.txt"),
 			},
 			want: false,
 		},
 		{
 			name: "noVariableLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/noVariableLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/noVariableLen13.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "threeVariablesLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/threeVariablesLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/threeVariablesLen13.txt"),
 			},
 			want: false,
 		},
 		{
 			name: "singleFuncLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/singleFuncLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/singleFuncLen13.txt"),
 			},
 			want: false,
 		},
 		{
 			name: "twoMethodsLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/twoFuncLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/twoFuncLen13.txt"),
 			},
 			want: false,
 		},
 		{
 			name: "noFuncLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/noFuncLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/noFuncLen13.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "singleStrLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/singleStrLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/singleStrLen13.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "noStrLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/noStrLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/noStrLen13.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "noCommentsLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/noFuncLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/noFuncLen13.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "singleCommentLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/singleCommentLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/singleCommentLen13.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "typeDefLen13",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/typeDefLen13.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/typeDefLen13.txt"),
 			},
 			want: false,
 		},
 		{
 			name: "nestedGoFilesNegative",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/nestedGoFilesNegative.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/nestedGoFilesNegative.txt"),
 			},
 			want: true,
 		},
 		{
 			name: "nestedGoFilesPositive",
 			args: args{
-				node: getRootNode("no_ident_equal_len_13/nestedGoFilesPositive.txt"),
+				node: getRootNode("no_ident_equal_len_13_testcases/nestedGoFilesPositive.txt"),
 			},
 			want: false,
 		},
