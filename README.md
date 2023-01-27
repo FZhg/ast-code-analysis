@@ -2,9 +2,13 @@
 
 
 ## Usage
-`go run cli.go -noIdentEqLen13 [filepath]`
+```console
+go run cli.go -noIdentEqLen13 [filepath]
+```
 
-`go run cli.go -maxControlNesting4 [filepath]`
+```console
+go run cli.go -maxControlNesting4 [filepath]
+```
 
 ##   `ast` library for Golang
 The [`ast` library](https://pkg.go.dev/go/ast) belongs to the Standard library of the Go programming language. There are three important concepts in this library for static analysis: 
